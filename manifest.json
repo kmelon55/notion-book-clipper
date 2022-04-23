@@ -1,0 +1,36 @@
+{
+  "name": "book information extractor for Notion",
+  "description": "yes24 책 정보 노션으로 추출하기",
+  "version": "0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "https://api.notion.com/*"
+  ],
+  "content_scripts" : [
+    {
+      "matches": [
+        "https://www.yes24.com/*",
+        "http://www.yes24.com/*"
+      ],
+      "js": ["content-script.js"]
+    }],
+  "externally_connectable": {
+    "matches": [
+      "https://*.yes24.com/*",
+      "http://*.yes24.com/*"
+    ]
+  },
+  "sidebar_action" : {
+    "default_page" : "sidebar_page.html",
+    "default_icon" : {
+      "16" : "/images/book_icon.png"
+   }
+  }, 
+"icons":  {
+    "128":"/images/book_icon.png"
+  }
+}
