@@ -4,7 +4,7 @@ const options = {
       Accept: 'application/json',
       'Notion-Version': '2022-02-22',
       'Content-Type': 'application/json',
-      Authorization: 'Bearer secret_3wwZ6huQysb4ms8FBvLhYdZ6YcGhbLMJMZrrrEkq7O8'
+      Authorization: 'Bearer secret'
     }
   };
   
